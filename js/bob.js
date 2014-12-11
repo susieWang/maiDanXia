@@ -3,9 +3,9 @@ $(document).ready(function() {
 
     var controller = new ScrollMagic;
 
-    var subjectEntry = '../images/scroll-magic/man-entry.png',
-        subject0 = '../images/scroll-magic/man-0.png',
-        subject90 = '../images/scroll-magic/man-90.png';
+    var subjectEntry = './images/scroll-magic/man-entry.png',
+        subject0 = './images/scroll-magic/man-0.png',
+        subject90 = './images/scroll-magic/man-90.png';
 
     var spiritClass = '.js-subject';
     var $spirit = $(spiritClass);
