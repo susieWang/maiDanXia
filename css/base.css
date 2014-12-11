@@ -1,0 +1,98 @@
+/* @author:susie
+@date:2014.11.29 */
+body,html {
+	min-width: 1200px;
+/*	font-family: 'Microsoft Yahei', '\5FAE\8F6F\96C5\9ED1', Arial,
+		'Hiragino Sans GB', '\5B8B\4F53';*/
+	font-family: Tahoma,"Microsoft YaHei",Arial,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,SimSun,sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	color: #5e5e5e
+}
+
+button,dd,div,dl,dt,form,img,input,li,ol,p,td,th,ul {
+	margin: 0;
+	padding: 0;
+	border: 0
+}
+
+li {
+	list-style-type: none
+}
+
+img {
+	border: none;
+	vertical-align: top
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-weight: 500
+}
+
+input {
+	font-size: 12px;
+	vertical-align: middle;
+	color: #333;
+	outline: 0
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+a {
+	cursor: pointer;
+	outline: 0
+}
+
+a:hover,a:link,a:visited {
+	text-decoration: none
+}
+
+
+.white {color: #fff}
+.red1 {color: #ea544a}
+.blue1 {color: #474e5d}
+.blue2 {color: #8cb5de}
+.grey1 {color: #a5a5a5}
+.grey2 {color: #5e5e5e}
+.grey3 {color: #323232}
+.pink1 {color: #f3a6a2}
+.pink2 {color: #fce5e4}
+
+.size12 {font-size: 12px}
+.size14 {font-size: 14px}
+.size16 {font-size: 16px}
+.size18 {font-size: 18px}
+.size20 {font-size: 20px}
+.size24 {font-size: 24px}
+.size30 {font-size: 30px}
+.size36 {font-size: 36px}
+.size40 {font-size: 40px}
+.size48 {font-size: 48px}
+
+.font-bold {font-weight: 700}
+.font-normal {font-weight: 400}
+.font-en {font-family: Arial}
+
+.fl {float: left}
+.fr {float: right}
+
+
+.ta-l {text-align: left}
+.ta-c {text-align: center}
+.ta-r {text-align: right}
+
+.clearfix {display: inline-table;display: block;zoom: 1}
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden
+}
