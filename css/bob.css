@@ -98,7 +98,7 @@
 }
 
 .line:before {
-    border-top: 3px dashed #000;
+    border-top: 3px dashed #393939;
     content: '';
     height: 0;
     left: 0;
@@ -147,7 +147,7 @@
 }
 
 .point-outer {
-    border: 1px dashed #000;
+    border: 1px dashed #393939;
     border-radius: 50%;
     height: 50px;
     left: -25px;

@@ -10,6 +10,11 @@ $(document).ready(function() {
     var spiritClass = '.js-subject';
     var $spirit = $(spiritClass);
 
+    var tempImg1 = new Image();
+    tempImg1.src = subject0;
+    var tempImg2 = new Image(subject90);
+    tempImg2.src = subject90;
+
     var pinAnim = (new TimelineMax).add([TweenMax.to(spiritClass, 1, {
         left: '30px',
         top: '92px'
@@ -31,25 +36,7 @@ $(document).ready(function() {
         onReverseComplete: function() {
             $spirit.attr('src', subject90)
         }
-    })]).add([TweenMax.to(spiritClass, 1, {
-        left: '295px',
-        top: '149px',
-        onStart: function() {
-            $spirit.attr('src', subject90);
-        },
-        onReverseComplete: function() {
-            $spirit.attr('src', subject0);
-        }
     })]).add([TweenMax.to(spiritClass, 1.5, {
-        left: '295px',
-        top: '149px',
-        onStart: function() {
-            $spirit.attr('src', subject0);
-        },
-        onReverseComplete: function() {
-            $spirit.attr('src', subject90);
-        }
-    })]).add([TweenMax.to(spiritClass, 1, {
         left: '390px',
         top: '185px',
         onStart: function() {
@@ -58,7 +45,7 @@ $(document).ready(function() {
         onReverseComplete: function() {
             $spirit.attr('src', subject0);
         }
-    })]).add([TweenMax.to(spiritClass, 1, {
+    })]).add([TweenMax.to(spiritClass, 1.5, {
         left: '520px',
         top: '125px',
         onStart: function() {
@@ -100,7 +87,10 @@ $(document).ready(function() {
             $('.step-1').css({ opacity: 1 });
         },
         onReverseComplete: function() {
-            $('.step-1').css({ opacity: 0 });
+            // $('.step-1').css({ opacity: 0 });
+        },
+        onComplete: function() {
+            this.target.css({ 'min-width': this.vars.css.width });
         }
     })]).add([TweenMax.to('.step-2', 1, {
         width: '200px',
@@ -109,8 +99,11 @@ $(document).ready(function() {
             $('.step-2').css({ opacity: 1 });
         },
         onReverseComplete: function() {
-            $('.point-1').fadeOut(200);
-            $('.step-2').css({ opacity: 0 });
+            // $('.point-1').fadeOut(200);
+            // $('.step-2').css({ opacity: 0 });
+        },
+        onComplete: function() {
+            this.target.css({ 'min-width': this.vars.css.width });
         }
     })]).add([TweenMax.to('.step-3', 1, {
         width: '300px',
@@ -119,8 +112,11 @@ $(document).ready(function() {
             $('.step-3').css({ opacity: 1 });
         },
         onReverseComplete: function() {
-            $('.point-2').fadeOut(200);
-            $('.step-3').css({ opacity: 0 });
+            // $('.point-2').fadeOut(200);
+            // $('.step-3').css({ opacity: 0 });
+        },
+        onComplete: function() {
+            this.target.css({ 'min-width': this.vars.css.width });
         }
     })]).add([TweenMax.to('.step-4', 1, {
         width: '180px',
@@ -129,8 +125,11 @@ $(document).ready(function() {
             $('.step-4').css({ opacity: 1 });
         },
         onReverseComplete: function() {
-            $('.point-3').fadeOut(200);
-            $('.step-4').css({ opacity: 0 });
+            // $('.point-3').fadeOut(200);
+            // $('.step-4').css({ opacity: 0 });
+        },
+        onComplete: function() {
+            this.target.css({ 'min-width': this.vars.css.width });
         }
     })]).add([TweenMax.to('.step-5', 1, {
         width: '250px',
@@ -139,8 +138,11 @@ $(document).ready(function() {
             $('.step-5').css({ opacity: 1 });
         },
         onReverseComplete: function() {
-            $('.point-4').fadeOut(200);
-            $('.step-5').css({ opacity: 0 });
+            // $('.point-4').fadeOut(200);
+            // $('.step-5').css({ opacity: 0 });
+        },
+        onComplete: function() {
+            this.target.css({ 'min-width': this.vars.css.width });
         }
     })]);
 
@@ -148,8 +150,7 @@ $(document).ready(function() {
         triggerElement: '#part5',
         triggerHook: 'onLeave',
         duration: 600,
-        offset: 0,
-        reverse: false
+        offset: 0
     }).setTween(stepAnimation).setPin('#part5').addTo(controller);
 });
 
