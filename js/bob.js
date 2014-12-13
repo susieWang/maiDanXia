@@ -148,7 +148,8 @@ $(document).ready(function() {
         triggerElement: '#part5',
         triggerHook: 'onLeave',
         duration: 600,
-        offset: 0
+        offset: 0,
+        reverse: false
     }).setTween(stepAnimation).setPin('#part5').addTo(controller);
 });
 

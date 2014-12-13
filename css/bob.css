@@ -53,21 +53,37 @@
 
 .step,
 .point-info {
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
     transform-origin: 0 0;
 }
 
 .step-2,
 .step-4 {
+    -webkit-transform: rotate(-20deg) translateZ(0);
+    -moz-transform: rotate(-20deg) translateZ(0);
+    -ms-transform: rotate(-20deg) translateZ(0);
+    -o-transform: rotate(-20deg) translateZ(0);
     transform: rotate(-20deg) translateZ(0);
 }
 
 .step-5 {
+    -webkit-transform: rotate(-30deg) translateZ(0);
+    -moz-transform: rotate(-30deg) translateZ(0);
+    -ms-transform: rotate(-30deg) translateZ(0);
+    -o-transform: rotate(-30deg) translateZ(0);
     transform: rotate(-30deg) translateZ(0);
 }
 
 .step-2 > .point > .point-info,
 .step-3,
 .step-4 > .point > .point-info {
+    -webkit-transform: rotate(20deg) translateZ(0);
+    -moz-transform: rotate(20deg) translateZ(0);
+    -ms-transform: rotate(20deg) translateZ(0);
+    -o-transform: rotate(20deg) translateZ(0);
     transform: rotate(20deg) translateZ(0);
 }
 
