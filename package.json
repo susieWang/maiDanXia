@@ -1,0 +1,18 @@
+{
+  "name": "mai-dan-xia",
+  "version": "0.0.1",
+  "description": "Mai Dan Xia",
+  "main": "index",
+  "author": "Smadey",
+  "repository": "https://github.com/smadey/mai-dan-xia.git",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.*"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node index"
+  }
+}
