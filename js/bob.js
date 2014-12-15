@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     var tempImg1 = new Image();
     tempImg1.src = subject0;
-    var tempImg2 = new Image(subject90);
+    var tempImg2 = new Image();
     tempImg2.src = subject90;
 
     var pinAnim = (new TimelineMax).add([TweenMax.to(spiritClass, 1, {
