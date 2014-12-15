@@ -179,9 +179,10 @@
 }
 
 .point-outer {
-    border-color: #6d6d6d;
-    border-style: dashed;
-    border-width: 1px;
+    border-bottom: 1px dashed #6d6d6d;
+    border-left: 1px dashed #6d6d6d;
+    border-right: 1px dashed #6d6d6d;
+    border-top: 1px dashed #6d6d6d;
     /*border: 1px dashed #6d6d6d;*/
     border-radius: 50%;
     height: 36px;
