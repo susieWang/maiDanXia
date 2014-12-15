@@ -1,9 +1,42 @@
 
+.part3 .subheader {
+    height: 275px;
+}
+
+.part3-sub-header-text {
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+.part3-sub-header-text-step {
+    color: #6d6d6d;
+    font-size: 28px;
+    position: absolute;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    width: 100%;
+}
+
+.part3-sub-header-text-step-1 {
+    text-align: left;
+}
+.part3-sub-header-text-step-2 {
+    text-align: center;
+}
+.part3-sub-header-text-step-3 {
+    text-align: right;
+}
+
 .wrapper {
     height: 456px;
     margin: 0 auto;
     position: relative;
-    top: 550px;
+    top: 480px;
     width: 797px;
 }
 
@@ -98,7 +131,7 @@
 }
 
 .line:before {
-    border-top: 3px dashed #393939;
+    border-top: 3px dashed #6d6d6d;
     content: '';
     height: 0;
     left: 0;
@@ -120,20 +153,20 @@
 }
 
 .point-1 {
-    background-color: rgb(204, 122, 13);
+    background-color: #e6b74c;
 }
 .point-2 {
-    background-color: rgb(40, 72, 52);
+    background-color: #6f907d;
 }
 .point-3 {
-    background-color: rgb(25, 121, 173);
+    background-color: #5cb7d5;
 }
 .point-4 {
-    background-color: rgb(198, 198, 198);
+    background-color: #e4e4e4;
 }
 
 .point-info {
-    color: #fff;
+    color: #6d6d6d;
     font-size: 20px;
     left: 0;
     position: absolute;
@@ -142,11 +175,11 @@
 }
 
 .point-1 > .point-info {
-    color: #333;
+    color: #6d6d6d;
 }
 
 .point-outer {
-    border: 1px dashed #393939;
+    border: 1px dashed #6d6d6d;
     border-radius: 50%;
     height: 36px;
     left: -18px;

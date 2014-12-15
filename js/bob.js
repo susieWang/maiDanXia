@@ -23,9 +23,11 @@ $(document).ready(function() {
         top: '160px',
         onStart: function() {
             $spirit.attr('src', subject90);
+            $('.part3-sub-header-text-step-1').css({ color: '#fff' });
         },
         onReverseComplete: function() {
             $spirit.attr('src', subjectEntry);
+            $('.part3-sub-header-text-step-1').css({ color: '#6d6d6d' });
         }
     })]).add([TweenMax.to(spiritClass, 1, {
         left: '215px',
@@ -41,9 +43,13 @@ $(document).ready(function() {
         top: '185px',
         onStart: function() {
             $spirit.attr('src', subject90);
+            $('.part3-sub-header-text-step-1').css({ color: '#6d6d6d' });
+            $('.part3-sub-header-text-step-2').css({ color: '#fff' });
         },
         onReverseComplete: function() {
             $spirit.attr('src', subject0);
+            $('.part3-sub-header-text-step-1').css({ color: '#fff' });
+            $('.part3-sub-header-text-step-2').css({ color: '#6d6d6d' });
         }
     })]).add([TweenMax.to(spiritClass, 1.5, {
         left: '520px',
@@ -59,9 +65,13 @@ $(document).ready(function() {
         top: '205px',
         onStart: function() {
             $spirit.attr('src', subject90);
+            $('.part3-sub-header-text-step-2').css({ color: '#6d6d6d' });
+            $('.part3-sub-header-text-step-3').css({ color: '#fff' });
         },
         onReverseComplete: function() {
             $spirit.attr('src', subject0);
+            $('.part3-sub-header-text-step-2').css({ color: '#fff' });
+            $('.part3-sub-header-text-step-3').css({ color: '#6d6d6d' });
         }
     })]).add([TweenMax.to(spiritClass, 1, {
         left: '720px',
@@ -78,73 +88,8 @@ $(document).ready(function() {
         triggerElement: '#part3',
         triggerHook: 'onLeave',
         duration: 1200,
-        offset: 400
+        offset: 170
     }).setTween(pinAnim).setPin('#part3').addTo(controller);
-
-    // var stepAnimation = (new TimelineMax).add([TweenMax.to('.step-1', 1, {
-    //     width: '200px',
-    //     onStart: function() {
-    //         $('.step-1').css({ opacity: 1 });
-    //     },
-    //     onReverseComplete: function() {
-    //         // $('.step-1').css({ opacity: 0 });
-    //     },
-    //     onComplete: function() {
-    //         this.target.css({ 'min-width': this.vars.css.width });
-    //     }
-    // })]).add([TweenMax.to('.step-2', 1, {
-    //     width: '200px',
-    //     onStart: function() {
-    //         $('.point-1').fadeIn(200);
-    //         $('.step-2').css({ opacity: 1 });
-    //     },
-    //     onReverseComplete: function() {
-    //         // $('.point-1').fadeOut(200);
-    //         // $('.step-2').css({ opacity: 0 });
-    //     },
-    //     onComplete: function() {
-    //         this.target.css({ 'min-width': this.vars.css.width });
-    //     }
-    // })]).add([TweenMax.to('.step-3', 1, {
-    //     width: '300px',
-    //     onStart: function() {
-    //         $('.point-2').fadeIn(200);
-    //         $('.step-3').css({ opacity: 1 });
-    //     },
-    //     onReverseComplete: function() {
-    //         // $('.point-2').fadeOut(200);
-    //         // $('.step-3').css({ opacity: 0 });
-    //     },
-    //     onComplete: function() {
-    //         this.target.css({ 'min-width': this.vars.css.width });
-    //     }
-    // })]).add([TweenMax.to('.step-4', 1, {
-    //     width: '180px',
-    //     onStart: function() {
-    //         $('.point-3').fadeIn(200);
-    //         $('.step-4').css({ opacity: 1 });
-    //     },
-    //     onReverseComplete: function() {
-    //         // $('.point-3').fadeOut(200);
-    //         // $('.step-4').css({ opacity: 0 });
-    //     },
-    //     onComplete: function() {
-    //         this.target.css({ 'min-width': this.vars.css.width });
-    //     }
-    // })]).add([TweenMax.to('.step-5', 1, {
-    //     width: '250px',
-    //     onStart: function() {
-    //         $('.point-4').fadeIn(200);
-    //         $('.step-5').css({ opacity: 1 });
-    //     },
-    //     onReverseComplete: function() {
-    //         // $('.point-4').fadeOut(200);
-    //         // $('.step-5').css({ opacity: 0 });
-    //     },
-    //     onComplete: function() {
-    //         this.target.css({ 'min-width': this.vars.css.width });
-    //     }
-    // })]);
 
 
     var getPointOuterStyle = function(r) {
@@ -157,11 +102,10 @@ $(document).ready(function() {
     };
 
     var loadPointOuterAnimation = function(selector) {
-        (new TimelineMax).add([TweenMax.to(selector, 1.3, getPointOuterStyle(23))])
-            .add([TweenMax.to(selector, 0.5, getPointOuterStyle(18))])
-            .add([TweenMax.to(selector, 0.5, getPointOuterStyle(23))])
-            .add([TweenMax.to(selector, 0.7, getPointOuterStyle(18))])
-            .add([TweenMax.to(selector, 0.4, getPointOuterStyle(23))]);
+        (new TimelineMax({ delay: 0.5, repeat: 999999 })).add([TweenMax.to(selector, 0.8, getPointOuterStyle(23))])
+            .add([TweenMax.to(selector, 0.8, getPointOuterStyle(18))])
+            .add([TweenMax.to(selector, 0.8, getPointOuterStyle(23))])
+            .add([TweenMax.to(selector, 0.8, getPointOuterStyle(18))]);
     };
 
     var stepAnimation = TweenMax.to('#part5', 1, {
