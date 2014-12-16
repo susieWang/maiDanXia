@@ -179,11 +179,7 @@
 }
 
 .point-outer {
-    border-bottom: 1px dashed #6d6d6d;
-    border-left: 1px dashed #6d6d6d;
-    border-right: 1px dashed #6d6d6d;
-    border-top: 1px dashed #6d6d6d;
-    /*border: 1px dashed #6d6d6d;*/
+    border: 1px dashed #6d6d6d;
     border-radius: 50%;
     height: 36px;
     left: -18px;
@@ -192,4 +188,13 @@
     position: absolute;
     top: -18px;
     width: 36px;
+}
+
+@-moz-document url-prefix() {
+    .point-outer {
+        background: transparent url('../images/scroll-magic/dashed-circle.png') 50% 50% no-repeat;
+        background-size: 100% 100%;
+        border: 0;
+        border-radius: 0;
+    }
 }
