@@ -23,11 +23,11 @@ $(document).ready(function() {
         top: '160px',
         onStart: function() {
             $spirit.attr('src', subject90);
-            $('.part3-sub-header-text-step-1').css({ color: '#fff' });
+            $('.part3-sub-header-step-1').animate({ opacity: 0 });
         },
         onReverseComplete: function() {
             $spirit.attr('src', subjectEntry);
-            $('.part3-sub-header-text-step-1').css({ color: '#6d6d6d' });
+            $('.part3-sub-header-step-1').animate({ opacity: 1 });
         }
     })]).add([TweenMax.to(spiritClass, 1, {
         left: '215px',
@@ -43,13 +43,11 @@ $(document).ready(function() {
         top: '185px',
         onStart: function() {
             $spirit.attr('src', subject90);
-            $('.part3-sub-header-text-step-1').css({ color: '#6d6d6d' });
-            $('.part3-sub-header-text-step-2').css({ color: '#fff' });
+            $('.part3-sub-header-step-2').animate({ opacity: 0 });
         },
         onReverseComplete: function() {
             $spirit.attr('src', subject0);
-            $('.part3-sub-header-text-step-1').css({ color: '#fff' });
-            $('.part3-sub-header-text-step-2').css({ color: '#6d6d6d' });
+            $('.part3-sub-header-step-2').animate({ opacity: 1 });
         }
     })]).add([TweenMax.to(spiritClass, 1.5, {
         left: '520px',
@@ -65,13 +63,11 @@ $(document).ready(function() {
         top: '205px',
         onStart: function() {
             $spirit.attr('src', subject90);
-            $('.part3-sub-header-text-step-2').css({ color: '#6d6d6d' });
-            $('.part3-sub-header-text-step-3').css({ color: '#fff' });
+            $('.part3-sub-header-step-3').animate({ opacity: 0 });
         },
         onReverseComplete: function() {
             $spirit.attr('src', subject0);
-            $('.part3-sub-header-text-step-2').css({ color: '#fff' });
-            $('.part3-sub-header-text-step-3').css({ color: '#6d6d6d' });
+            $('.part3-sub-header-step-3').animate({ opacity: 1 });
         }
     })]).add([TweenMax.to(spiritClass, 1, {
         left: '720px',
@@ -102,10 +98,11 @@ $(document).ready(function() {
     };
 
     var loadPointOuterAnimation = function(selector) {
-        (new TimelineMax({ delay: 0.5, repeat: 999999 })).add([TweenMax.to(selector, 0.8, getPointOuterStyle(23))])
-            .add([TweenMax.to(selector, 0.8, getPointOuterStyle(18))])
-            .add([TweenMax.to(selector, 0.8, getPointOuterStyle(23))])
-            .add([TweenMax.to(selector, 0.8, getPointOuterStyle(18))]);
+        (new TimelineMax({ delay: 0.5 })).add([TweenMax.to(selector, 0.8, getPointOuterStyle(23))])
+            .add([TweenMax.to(selector, 0.5, getPointOuterStyle(18))])
+            .add([TweenMax.to(selector, 0.5, getPointOuterStyle(23))])
+            .add([TweenMax.to(selector, 0.7, getPointOuterStyle(18))])
+            .add([TweenMax.to(selector, 0.4, getPointOuterStyle(23))]);
     };
 
     var stepAnimation = TweenMax.to('#part5', 1, {
