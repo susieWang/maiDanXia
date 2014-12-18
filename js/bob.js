@@ -151,7 +151,7 @@ $(document).ready(function() {
     $('#part5').length && new ScrollScene({
         triggerElement: '#part5',
         triggerHook: 'onLeave',
-        duration: 100,
+        duration: 1,
         offset: 0
     }).setTween(stepAnimation).setPin('#part5').addTo(controller);
 });
