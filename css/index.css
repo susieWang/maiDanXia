@@ -27,7 +27,7 @@
 	text-align: center;
 }
 .part4{
-	height: 1320px;
+	height: 1350px;
 	width: 100%;
 	background: #53b0d1;
 	text-align: center;
@@ -535,6 +535,15 @@
     position: relative;
     top: 150px;
  } 
+
+.page4logs {
+	background: url(../images/page4logs.png) no-repeat center center;
+	background-position: 0 0; width: 961px; height: 138px;
+	display: inline-block;
+	position: relative;
+    top: 150px;
+}
+
 .sprite-page4title{ background-position: 0 -1170px; width: 625px; height: 37px; } 
 .sprite-page5content{ background-position: 0 -1257px; width: 537px; height: 147px; } 
 .sprite-page6title{ background-position: 0 -1454px; width: 497px; height: 32px; 

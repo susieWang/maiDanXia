@@ -164,7 +164,8 @@
                     <div class="addQinCangA"><a class="intoDialog" id="zhaoPinA">ENTER</a>
                     </div>
                 </div>
-                <div class="new-titles sprite-page4logo"></div>
+                <!--div class="new-titles sprite-page4logo"></div-->
+                <div class="page4logs"></div>
             </div>
         </div>
 
@@ -406,13 +407,13 @@
             $("#fenqi").removeClass("pagetitle sprite-fenqi").addClass("pagetitlehover sprite-fenqi-hover");
             $("#qincang").addClass("pagetitle sprite-qincang").removeClass("pagetitlehover sprite-qincang-hover");
             $("#zhaoshang").addClass("pagetitle sprite-zhaoshang").removeClass("pagetitlehover sprite-zhaoshang-hover");
-        } else if (t >= 2735 && t < 4055) {
+        } else if (t >= 2735 && t < 4085) {
             $("#shouye").addClass("pagetitle sprite-shouye").removeClass("pagetitlehover sprite-shouye-hover");
             $("#fenqi").addClass("pagetitle sprite-fenqi").removeClass("pagetitlehover sprite-fenqi-hover");
             $("#qincang").removeClass("pagetitle sprite-qincang").addClass("pagetitlehover sprite-qincang-hover");
             $("#zhaoshang").addClass("pagetitle sprite-zhaoshang").removeClass("pagetitlehover sprite-zhaoshang-hover");
 
-        } else if (t >= 4055) {
+        } else if (t >= 4085) {
             $("#shouye").addClass("pagetitle sprite-shouye").removeClass("pagetitlehover sprite-shouye-hover");
             $("#fenqi").addClass("pagetitle sprite-fenqi").removeClass("pagetitlehover sprite-fenqi-hover");
             $("#qincang").addClass("pagetitle sprite-qincang").removeClass("pagetitlehover sprite-qincang-hover");
@@ -420,9 +421,9 @@
 
         }
 
-        if (t <= 4855) {
+        if (t <= 4885) {
             $("#bounce").removeClass("dz-bg2");
-        } else if (t > 4855) {
+        } else if (t > 4885) {
             $("#bounce").addClass("dz-bg2");
         }
     }
