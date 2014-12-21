@@ -50,10 +50,11 @@
 
 .step-container {
     height: 600px;
+    left: -70px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    top: 275px;
+    top: 200px;
     width: 1050px;
 }
 
@@ -90,11 +91,11 @@
 }
 
 .step-5 {
-    -webkit-transform: rotate(-30deg) translateZ(0);
-    -moz-transform: rotate(-30deg) translateZ(0);
-    -ms-transform: rotate(-30deg) translateZ(0);
-    -o-transform: rotate(-30deg) translateZ(0);
-    transform: rotate(-30deg) translateZ(0);
+    -webkit-transform: rotate(-15deg) translateZ(0);
+    -moz-transform: rotate(-15deg) translateZ(0);
+    -ms-transform: rotate(-15deg) translateZ(0);
+    -o-transform: rotate(-15deg) translateZ(0);
+    transform: rotate(-15deg) translateZ(0);
 }
 
 .step-2 > .point > .point-info,

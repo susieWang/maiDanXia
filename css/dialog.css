@@ -8,16 +8,18 @@
 	z-index: 999;
 	width: 100%;
 	height: 100%;
+	text-align: center;
 	top: 0;
 }
 
 .zhaoPinInfo {
 	position: fixed;
 	top: 0;
-	width: 800px;
+	width: 100%;
 	text-align: center;
 	height: 100%;
 	z-index: 9999;
+	overflow-y:scroll;
 }
 a.closeDialog {
 	background:url(../images/close.png) no-repeat center center;
@@ -31,10 +33,12 @@ a.closeDialog {
 }
 .zhaoPinInfo table{
 	margin:0 auto;
-	margin-top:200px;
+	margin-top: 100px;
 	vertical-align: top;
 	position: relative;
-	top: 60px;
+	min-height: 900px;
+	max-height: 1350px;
+	height: 1230px;
 }
 .zhaoPinInfo table th{
 	width: 873px;
@@ -47,20 +51,26 @@ a.closeDialog {
 	background: #f3f6f7;
 }
 .zhaoPinDiv {
-	background: #f3f6f7;
-	position: fixed;
-	left: 940px;
-	top: 700px;
+	background: #ffffff;
+	position: absolute;
+	left: 50%;
+	margin-left: 260px;
 	height: 230px;
     width: 240px;
+    opacity:0.7;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c0c0c0;
+    box-shadow: 0px 0px 6px 0px #ededed;
+    z-index: 470;
 }
 .zhaoPinContent{
 	width: 800px;
-	position: fixed;
+	position: absolute;
 	height: 100%;
-    left: 100px;
-    top: 100px;
-    color: #b0b0b0;
+    left: 50%;
+    margin-left: -580px;
+    color: #6d6d6d;
 }
 .zhaoPinContent img{
 	position: absolute;
@@ -81,28 +91,31 @@ div.zhaoPinContentDetail {
 }
 
 .zhaoPinJobs{
-    left: 940px;
+    left: 50%;
+    margin-left: 260px;
     padding-left: 80px;
-    position: fixed;
+    position: absolute;
     text-align: left;
-    top: 100px;
-    height: 560px;
+    height: 730px;z
     width: 240px;
 }
 .zhaoPinJobs ul{padding-top: 70px;padding-bottom: 70px;}
 .zhaoPinJobs a{
 	display: block;
-	height: 40px;
+	height: 50px;
 	line-height: 40px;
 	font-size: 19px;
-	color: #b0b0b0;
+	color: #6d6d6d;
 }
 .zhaoPinJobs a:hover,.zhaoPinJobs a.selected{
 	color: #ffa200;
 }
 .hrEmail{
-	width: 326px;
-	
+	width: 240px;
+    padding-left: 80px;
+    text-align: left;
+	color: #6d6d6d;
+	margin-top: 150px;
 }
 .mailLabel,.mailInfo{
 	padding-left:83px;
@@ -124,40 +137,53 @@ a.selected {
 }
 
 
-
 .businessCard {
-  border-width: 2.083px;
+  border-width: 2px;
   border-color: rgb( 192, 191, 191 );
   border-style: dotted;
   border-radius: 10px;
-  left: 190px;
-  top: 180px;
+  left: 50%;
+  margin-left:-310px;
+  top: 80px;
   width: 531.834px;
   height: 232.834px;
   z-index: 472;
-  position: fixed;
+  position: absolute;
 
 }
 
 .business1 {
-  position: fixed;
-  left: 150px;
-  top: 500px;
+    font-weight: normal;
+    left: 50%;
+    margin-left: -290px;
+    margin-top: 170px;
+    position: relative;
+    width: 680px;
 }
 
 .business2 {
-  position: fixed;
-  left: 150px;
-  top: 700px;
+  left: 50%;
+  margin-left:-290px;
+  margin-top: 75px;
+  width: 680px;
+  font-weight: normal;
+  position: relative;
+}
+
+.business1 li, .business2 li {
+	line-height: 40px;
+	list-style: disc;
 }
 
 .special-line {
-  border-width: 2.083px;
-  border-color: rgb( 192, 191, 191 );
-  border-style: dotted;
-  position: fixed;
-  top:600px;
-  left:165px;
+  border-top:  2px dotted rgb(192, 191, 191);
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  left: 50%;
+  margin-left:-335px;
+  margin-top: 50px;
+  position: relative;
   width: 670px;
   height: 0;
   z-index: 478;
@@ -171,34 +197,34 @@ a.selected {
 	color:#ffa200;
 	padding-top:40px;
 	padding-left:70px;
-		 font-weight: normal;
+    font-weight: normal;
 }
 .cardContent {
   padding-left:70px;
   padding-top:30px;
   font-weight: normal;
-}
-
-.cardSingleLine {
-	line-height: 30px;
-	 font-weight: normal;
+  line-height: 30px;
+  font-weight: normal;
 }
 
 .business1>h2, .business2>h2 {
 	text-align: center;
 }
 
-.business1, .business2 {
-		 font-weight: normal;
-}
 
 
 .backgroudBrand {
     background:url(../images/mai-logo.png) no-repeat center center;
     height: 221px;
-    left: 600px;
-    position: fixed;
-    top: 170px;
     width: 249px;
+    left: 500px;
+    position: relative;
+    top: 76px;
+}
+
+.businessSubTitle {
+	font-size: 20px;
+	margin-bottom: 30px;
+	margin-left:-70px;
 }
 

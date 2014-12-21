@@ -1,13 +1,3 @@
-/*
-$(".headerBar a").click(function(){
-  $(".headerBar a").each(function(){
-  	$(this).removeClass("headerBarSelected");
-  });
-
-  $(this).addClass("headerBarSelected");
-});
- */
-
  $("#shouye").click(function(){
     $("#shouye").removeClass("pagetitle sprite-shouye").addClass("pagetitlehover sprite-shouye-hover");
     $("#fenqi").addClass("pagetitle sprite-fenqi").removeClass("pagetitlehover sprite-fenqi-hover");
