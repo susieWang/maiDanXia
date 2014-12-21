@@ -104,42 +104,53 @@ $(document).ready(function() {
             .add([TweenMax.to(selector, 0.4, getPointOuterStyle(23))]);
     };
 
-    var getStepStartFunc = function(index) {
-        return function() {
-            $('.step-' + index).css({ opacity: 1 });
+    var stepAnimation = TweenMax.to('#part5', 1, {
+        onStart: function() {
+            (new TimelineMax).add([TweenMax.to('.step-1', 0.3, {
+                width: '200px',
+                onStart: function() {
+                    $('.step-1').css({ opacity: 1 });
+                }
+            })]).add([TweenMax.to('.step-2', 0.3, {
+                width: '200px',
+                onStart: function() {
+                    $('.point-1').fadeIn(1000);
+                    $('.step-2').css({ opacity: 1 });
 
-            if(index > 1) {
-                $('.point-' + (index - 1)).fadeIn(1000);
-                loadPointOuterAnimation('.point-' + (index - 1) + ' > .point-outer');
-            }
+                    loadPointOuterAnimation('.point-1 > .point-outer');
+                }
+            })]).add([TweenMax.to('.step-3', 0.3, {
+                width: '300px',
+                onStart: function() {
+                    $('.point-2').fadeIn(1000);
+                    $('.step-3').css({ opacity: 1 });
+
+                    loadPointOuterAnimation('.point-2 > .point-outer');
+                }
+            })]).add([TweenMax.to('.step-4', 0.3, {
+                width: '180px',
+                onStart: function() {
+                    $('.point-3').fadeIn(1000);
+                    $('.step-4').css({ opacity: 1 });
+
+                    loadPointOuterAnimation('.point-3 > .point-outer');
+                }
+            })]).add([TweenMax.to('.step-5', 0.3, {
+                width: '250px',
+                onStart: function() {
+                    $('.point-4').fadeIn(1000);
+                    $('.step-5').css({ opacity: 1 });
+
+                    loadPointOuterAnimation('.point-4 > .point-outer');
+                }
+            })]);
         }
-    };
+    });
 
-
-    var stepAnimation;
-
-    if($('#part5').length) {
-        new ScrollScene({
-            triggerElement: '#part5',
-            triggerHook: 0,
-            duration: 800,
-            offset: 0
-        }).on('enter', function() {
-            if(!stepAnimation) {
-                stepAnimation = new TimelineMax();
-
-                $.each([200, 200, 300, 180, 250], function(index, width) {
-                    stepAnimation.add([
-                        TweenMax.to('.step-' + (index + 1), 0.3, {
-                            width: width + 'px',
-                            delay: index ? 0 : 0.5,
-                            onStart: getStepStartFunc(index + 1)
-                        })
-                    ]);
-                });
-            }
-        }).setPin('#part5').addTo(controller);
-
-        $('#part5').parent().css({ 'background-color': $('#part5').css('background-color') });
-    }
+    $('#part5').length && new ScrollScene({
+        triggerElement: '#part5',
+        triggerHook: 'onLeave',
+        duration: 0.001,
+        offset: -100
+    }).setTween(stepAnimation).setPin('#part5').addTo(controller);
 });
