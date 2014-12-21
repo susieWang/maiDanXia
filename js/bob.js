@@ -110,9 +110,9 @@ $(document).ready(function() {
 
 
     if($('#part5').length) {
-        var _top = $('#part5').offset().top;
         var _height = $('#part5').height();
-        var _offset = 0;
+        var _top = $('#part5').offset().top;
+        var _offset = Math.min(-100, -200 + _height - window.innerHeight);
 
         var $root = $(window);
         var isPlayed = false;
@@ -120,13 +120,13 @@ $(document).ready(function() {
         $root.on('scroll', function() {
             var _offsetTop = $root.scrollTop();
 
-            if(_offsetTop < _top - _offset) {
+            if(_offsetTop < _top + _offset) {
                 if(isPlayed) {
                     isPlayed = false;
                     reset();
                 }
             }
-            else if(_offsetTop >= _top - _offset && _offsetTop <= _top + _height) {
+            else if(_offsetTop >= _top + _offset && _offsetTop <= _top + _height) {
                 if(!isPlayed) {
                     isPlayed = true;
                     play();
