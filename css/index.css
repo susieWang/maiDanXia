@@ -6,7 +6,7 @@
 	.container{width:1180px;}
 }
 */
-.pageBody {width:100%;max-width: 2400px;margin: 0 auto;overflow-x:hidden;}
+.pageBody {width:100%;max-width: 1920px;margin: 0 auto;overflow-x:hidden;}
 .container{width:1200px;margin: 0 auto;text-align: center;}
 .part {position: relative;}
 .part .subheader{background:url(../images/new-titles.png) no-repeat center center;position: absolute;left: 50%;}
@@ -27,7 +27,7 @@
 	text-align: center;
 }
 .part4{
-	height: 1350px;
+	height: 1432px;
 	width: 100%;
 	background: #53b0d1;
 	text-align: center;
@@ -40,7 +40,7 @@
 .part6{
 	height: 1650px;
 	width: 100%;
-	background: url(../images/cityshadow.png) no-repeat bottom #65987b;
+	background: url(../images/cityshadow.png) no-repeat bottom #669966;
 	z-index: -1;
 	text-align: center;
 }
@@ -84,15 +84,16 @@
 	bottom: 0;
 }
 .part1 .navbox2 table{
-	width: 1000px;
+	width: 785px;
 	height: 100%;
 	margin:0 auto;
 }
 .part1 .navbox2 table td{
 	height: 100%;
 	vertical-align: middle;
+	text-align: center;
 }
-.part1 .navbox2 table td a{text-indent: -9999px;height: 30px;margin: 0 auto;text-align: center;}
+.part1 .navbox2 table td a{text-indent: -9999px;height: 26px;margin: 0 auto;text-align: center;}
 .part1 .navbox2 table td a.sprite-cysh{ background-position: 0 -105px; width: 152px;} 
 .part1 .navbox2 table td a.sprite-gcsj{ background-position: 0 -140px; width: 180px;} 
 .part1 .navbox2 table td a.sprite-gtsj{ background-position: 0 -175px; width: 149px;} 
@@ -103,12 +104,12 @@
 	background: url(../images/6-brands.png) no-repeat center center;
 	display: inline-block;
 }
-.part1 .navbox2 table td a.sprite-china-mobile{ background-position: 0 0; width: 76px; height: 26px; } 
-.part1 .navbox2 table td a.sprite-china-tel{ background-position: 0 -76px; width: 86px; height: 25px; } 
-.part1 .navbox2 table td a.sprite-china-union{ background-position: 0 -151px; width: 114px; height: 24px; } 
-.part1 .navbox2 table td a.sprite-fun-talk{ background-position: 0 -225px; width: 93px; height: 21px; } 
-.part1 .navbox2 table td a.sprite-great-c{ background-position: 0 -296px; width: 90px; height: 21px; } 
-.part1 .navbox2 table td a.sprite-great-t{ background-position: 0 -367px; width: 94px; height: 22px; } 
+.part1 .navbox2 table td a.sprite-china-mobile{ background-position: 0 0; width: 76px;} 
+.part1 .navbox2 table td a.sprite-china-tel{ background-position: 0 -76px; width: 86px;} 
+.part1 .navbox2 table td a.sprite-china-union{ background-position: 0 -151px; width: 114px;} 
+.part1 .navbox2 table td a.sprite-fun-talk{ background-position: 0 -225px; width: 93px;} 
+.part1 .navbox2 table td a.sprite-great-c{ background-position: 0 -296px; width: 90px;} 
+.part1 .navbox2 table td a.sprite-great-t{ background-position: 0 -367px; width: 94px;} 
 
 
 
@@ -181,11 +182,11 @@
 	margin-left: -490px;
 }
 .part3 .riskDec{
-	width: 984px;
+	width: 800px;
 	position: absolute;
 	top: 1000px;
 	left: 50%;
-	margin-left: -492px;
+	margin-left: -400px;
 }
 .part3 .riskDec p{
 	line-height: 30px;
@@ -299,7 +300,7 @@
 }
 
 .part2 .o2obg li a  .iconDiv2{
- 	width: 72px;
+ 	width: 68px;
  	height: 68px;
 	background: url(../images/part2IconsNormal.png) no-repeat top left;
 	position: relative;
@@ -379,7 +380,7 @@
 	text-align: center;
 }
 .addQinCang .addQinCangTitle{
-    font-size: 19px;
+    font-size: 18px;
 	font-family: Tahoma,"Microsoft YaHei",Arial,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,SimSun,sans-serif;
 	color: #ddf0f6;
 	top: 46px;
@@ -388,7 +389,7 @@
 .addQinCang .addQinCangContent{
 	top: 70px;
     font-family: Tahoma,"Microsoft YaHei",Arial,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,SimSun,sans-serif;
-    font-size: 19px;
+    font-size: 18px;
 	color: #ddf0f6;
 }
 .addQinCang .addQinCangA{
@@ -443,7 +444,7 @@
 }
 
 .part6Images tr {
-	height: 235px;
+	height: 234px;
 	background-color: #4f455d;
 	color: #ffffff;
 }
@@ -538,10 +539,10 @@
 
 .page4logs {
 	background: url(../images/page4logs.png) no-repeat center center;
-	background-position: 0 0; width: 961px; height: 138px;
+	background-position: 0 0; width: 960px; height: 257px;
 	display: inline-block;
 	position: relative;
-    top: 150px;
+    top: 120px;
 }
 
 .sprite-page4title{ background-position: 0 -1170px; width: 625px; height: 37px; } 

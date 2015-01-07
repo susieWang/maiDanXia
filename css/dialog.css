@@ -33,7 +33,7 @@ a.closeDialog {
 }
 .zhaoPinInfo table{
 	margin:0 auto;
-	margin-top: 100px;
+	margin: 100px auto 110px auto;
 	vertical-align: top;
 	position: relative;
 	min-height: 900px;
@@ -67,10 +67,12 @@ a.closeDialog {
 .zhaoPinContent{
 	width: 800px;
 	position: absolute;
-	height: 100%;
+	height: auto;
+	overflow: hidden;
     left: 50%;
     margin-left: -580px;
     color: #6d6d6d;
+    padding-bottom: 60px;
 }
 .zhaoPinContent img{
 	position: absolute;

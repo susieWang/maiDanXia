@@ -159,9 +159,9 @@
                 <div class="addQinCang">
                     <div class="addQinCangTitle">加入秦苍科技 引领消费金融</div>
                     <div class="addQinCangContent">
-                        高级移动开发 高级软件开发 高级测试开发 DevOps 政策综合管理 风险策略分析 风险模型开发
+                        高级移动开发&nbsp;&nbsp;高级软件开发&nbsp;&nbsp;高级测试开发&nbsp;&nbsp;DevOps 政策综合管理 风险策略分析&nbsp;&nbsp;风险模型开发
                     </div>
-                    <div class="addQinCangA"><a class="intoDialog" id="zhaoPinA">ENTER</a>
+                    <div id="part4Enter" class="addQinCangA"><a class="intoDialog" id="zhaoPinA">ENTER</a>
                     </div>
                 </div>
                 <!--div class="new-titles sprite-page4logo"></div-->
@@ -239,12 +239,12 @@
                         </div>
                     </td>
                     <td style="text-align:center">
-                        <div style="border:1px solid #666666;height:218px;padding-top:15px">
+                        <div style="border:1px solid #666666;height:217px;padding-top:15px;border-left-style: none;border-bottom-style:none">
                             <img src="images/message2-1.png" />
                         </div>
                     </td>
                     <td>
-                        <div class="backgroudNormal">
+                        <div class="backgroudNormal" style="height:192px">
                             <div class="fontBig">消费者</div>
                             <div class="fontBig">长沙方麒节能门窗</div>
                             <div class="fontBig">何斌</div>
@@ -283,7 +283,7 @@
                 <div class="backgroudYellow">
                     <div class="fontBig">昆山全球通数码店 陈店长</div>
                     <br/>
-                    <div class="fontNormal">做了好几家分期，买单侠的服务是令我印象最深刻的。他们省去了业务员做单时间，全程客户自助DIY，以及高校的自动审批，为我们的电源节省了不少时间。最关键的是，买单侠能为我们带来更多业绩，招揽更多不同需求的客户。</div>
+                    <div class="fontNormal">做了好几家分期，买单侠的服务是令我印象最深刻的。他们省去了业务员做单时间，全程客户自助DIY，以及高效的自动审批，为我们的店员节省了不少时间。最关键的是，买单侠能为我们带来更多业绩，招揽更多不同需求的客户。</div>
                 </div>
             </td>
         </tr>
@@ -367,16 +367,15 @@
         $("#zhaoPinA").on("click", function(e) {
             $("#dialogDiv").show();
             $("#zhaoPinInfo").show();
-            $("body").scrollTop(0);
-            $("div.zhaoPinJobs a")[0].click();
-
-            $("body").css("overflow-y", "hidden");
+            //$("body").scrollTop(0);
+            $("div.zhaoPinJobs a:eq(0)").click();
+            $("body").css("overflow", "hidden");
         });
         $("#closeDialog").on("click", function(e) {
             $("#dialogDiv").hide();
             $("#zhaoPinInfo").hide();
 
-            $("body").css("overflow-y", "scroll");
+            $("body").css("overflow", "scroll");
         });
         $("div.zhaoPinJobs a").on("click", function(e) {
             var $t = $(this),
@@ -421,9 +420,9 @@
 
         }
 
-        if (t <= 4885) {
+        if (t <= 5685) {
             $("#bounce").removeClass("dz-bg2");
-        } else if (t > 4885) {
+        } else if (t > 5685) {
             $("#bounce").addClass("dz-bg2");
         }
     }
