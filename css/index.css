@@ -18,7 +18,7 @@
 .part2{
 	height: 770px;
 	width: 100%;
-	background: #e3e3e3;
+	background: #f6f6f6;
 }
 .part3{
 	height: 1215px;
@@ -160,9 +160,31 @@
 	top: 150px;
 }
 .part5 .subheader{
-	background-position: 0 -1257px; width: 537px; height: 147px;
+	background-position: 0 -1257px; width: 537px; height: 70px;
 	margin-left: -287px;
 	top: 150px;
+}
+.part5 .subheader2{
+	text-align: center;
+	margin:0 auto;
+	position:absolute;
+	top: 220px;
+	width: 100%;
+}
+.part5 .subheader2 h3,.part5 .telUs{
+	line-height: 44px;
+}
+.part5 .subheader2 h3{
+	font-size: 18px;
+	color:#767868;
+}
+.part5 .telUs{
+	font-size: 20px;
+	color: #6d6d6d;
+}
+.part5 .telUs span{
+	padding-left:17px;
+	color:#fb6e3b;
 }
 .part6 .subheader{
 	background-position: 0 -624px; 
