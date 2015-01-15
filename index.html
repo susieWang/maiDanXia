@@ -71,7 +71,7 @@
                 </table>
             </div>
         </div>
-        <div class="part part2">
+        <div class="part part2" id="part2">
             <div class="subheader">&nbsp;</div>
             <ul class="o2obg">
                 <li class="liIcon1">
@@ -214,7 +214,7 @@
 
 
 
-        <div class="part part6">
+        <div class="part part6" id="part6">
             <div id="bounce" class="bounceInDown">&nbsp;</div>
             <div class="new-titles sprite-page6title">&nbsp;</div>
             <table class="part6Images">
@@ -398,25 +398,26 @@
 
     window.onscroll = function() {
         var t = document.documentElement.scrollTop || document.body.scrollTop;
-
-        if (t < 1520) {
+        var h1=$("#part1").height(),h2=$("#part2").height(),h3=2410,h4=$("#part4").height(),h5=$("#part5").height(),h6=$("#part6").height();
+        var range1 = h1+h2-120,range2 = range1+h3-120,range3=range2+h4-120;
+        if (t < range1) {
             $("#shouye").removeClass("pagetitle sprite-shouye").addClass("pagetitlehover sprite-shouye-hover");
             $("#fenqi").addClass("pagetitle sprite-fenqi").removeClass("pagetitlehover sprite-fenqi-hover");
             $("#qincang").addClass("pagetitle sprite-qincang").removeClass("pagetitlehover sprite-qincang-hover");
             $("#zhaoshang").addClass("pagetitle sprite-zhaoshang").removeClass("pagetitlehover sprite-zhaoshang-hover");
 
-        } else if (t >= 1520 && t < 2735) {
+        } else if (t >= range1 && t < range2) {
             $("#shouye").addClass("pagetitle sprite-shouye").removeClass("pagetitlehover sprite-shouye-hover");
             $("#fenqi").removeClass("pagetitle sprite-fenqi").addClass("pagetitlehover sprite-fenqi-hover");
             $("#qincang").addClass("pagetitle sprite-qincang").removeClass("pagetitlehover sprite-qincang-hover");
             $("#zhaoshang").addClass("pagetitle sprite-zhaoshang").removeClass("pagetitlehover sprite-zhaoshang-hover");
-        } else if (t >= 2735 && t < 4085) {
+        } else if (t >= range2 && t < range3) {
             $("#shouye").addClass("pagetitle sprite-shouye").removeClass("pagetitlehover sprite-shouye-hover");
             $("#fenqi").addClass("pagetitle sprite-fenqi").removeClass("pagetitlehover sprite-fenqi-hover");
             $("#qincang").removeClass("pagetitle sprite-qincang").addClass("pagetitlehover sprite-qincang-hover");
             $("#zhaoshang").addClass("pagetitle sprite-zhaoshang").removeClass("pagetitlehover sprite-zhaoshang-hover");
 
-        } else if (t >= 4085) {
+        } else if (t >= range3) {
             $("#shouye").addClass("pagetitle sprite-shouye").removeClass("pagetitlehover sprite-shouye-hover");
             $("#fenqi").addClass("pagetitle sprite-fenqi").removeClass("pagetitlehover sprite-fenqi-hover");
             $("#qincang").addClass("pagetitle sprite-qincang").removeClass("pagetitlehover sprite-qincang-hover");
